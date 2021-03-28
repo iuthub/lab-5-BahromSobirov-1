@@ -9,31 +9,46 @@
 		<h1>Buy Your Way to a Better Education!</h1>
 
 		<p>
-			The rough economy, along with recent changes in University of Washington policy, now allow us to offer grades for money.  That's right!  All you need to get a 4.0 in this course is cold, hard, cash.
+			Recent changes in University of Washington policy now allow us to offer grades for money.
+			That's right! All you need to get an A in this class is cold,hard cash.
 		</p>
 		
 		<hr />
-		
+		<form action="sucker.php" method="post">
 		<h2>Give Us Your Money</h2>
 		<dl>
-			<dt>Name</dt>
+			<dt>Full name</dt>
 			<dd>
-				???
+				<input type="text" name="fullName"/>
 			</dd>
 			
 			<dt>Section</dt>
 			<dd>
-				???
+				<select name="Section">
+					<option value="001">001</option>
+					<option value="002">002</option>
+					<option value="003">003</option>
+					<option value="004">004</option>
+					<option value="005">005</option>
+					<option value="006">006</option>
+				</select>
 			</dd>
 			
 			<dt>Credit Card</dt>
 			<dd>
-				???
+				<input type="text" name="credit"/>
+			</dd>
+
+			<dt></dt>
+			<dd>
+				<input type="radio" name="Card" value="Visa"/>Visa
+				<input type="radio" name="Card" value="MasterCard"/>Master Card
 			</dd>
 		</dl>
 		
 		<div>
-			I am a giant sucker.
+			<input type="submit" value="I am a giant sucker."/>
 		</div>
+	</form>
 	</body>
 </html>
